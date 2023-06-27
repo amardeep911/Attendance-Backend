@@ -1,0 +1,15 @@
+GET http://127.0.0.1:8000/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDk5YzRiZTE4N2UzZDgzM2I3N2FmZTkiLCJpYXQiOjE2ODc4MTAzMTEsImV4cCI6MTY4NzgzOTExMSwiYXVkIjoiNjQ5OWM0YmUxODdlM2Q4MzNiNzdhZmU5IiwiaXNzIjoiYW1hcmRlZXByYW5qYW45MTFAZ21haWwuY29tIn0.i_PLSxOH_DIYJXMP2j3ubS4X--HHbt4Dn67dIcjRRZI
+
+
+POST http://127.0.0.1:8000/auth/register
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "amardeepranjans911@gmail.com",
+    "userId": "amardeepranjan911",
+    "userImage":"sfoaisfh"
+}
+
+
