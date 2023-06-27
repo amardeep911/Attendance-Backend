@@ -1,7 +1,7 @@
 GET http://127.0.0.1:8000/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDk5YzRiZTE4N2UzZDgzM2I3N2FmZTkiLCJpYXQiOjE2ODc4MTAzMTEsImV4cCI6MTY4NzgzOTExMSwiYXVkIjoiNjQ5OWM0YmUxODdlM2Q4MzNiNzdhZmU5IiwiaXNzIjoiYW1hcmRlZXByYW5qYW45MTFAZ21haWwuY29tIn0.i_PLSxOH_DIYJXMP2j3ubS4X--HHbt4Dn67dIcjRRZI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDlhNmQzZjU1MzA4NDQ5OTg5N2Q1NzgiLCJpYXQiOjE2ODc4NDIxMTEsImV4cCI6MTY4Nzg3MDkxMSwiYXVkIjoiNjQ5YTZkM2Y1NTMwODQ0OTk4OTdkNTc4IiwiaXNzIjoiYW1hcmRlZXByYW5qYW45MTFAZ21haWwuY29tIn0.NtfThlAmnZFEVwMRV1PmX50IYikC7o4G1hd1DR8Gb3M
 
-
+### Register
 POST http://127.0.0.1:8000/auth/register
 Content-Type: application/json
 
@@ -12,4 +12,13 @@ Content-Type: application/json
     "userImage":"sfoaisfh"
 }
 
+### updateOnbaording Details
+POST http://127.0.0.1:8000/user/updateOnboarding
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDlhN2Q1MmRlMTNhMWZmZjY0ZjA1YzkiLCJpYXQiOjE2ODc4NDY3MDcsImV4cCI6MTY4Nzg3NTUwNywiYXVkIjoiNjQ5YTdkNTJkZTEzYTFmZmY2NGYwNWM5IiwiaXNzIjoiYW1hcmRlZXByYW5qYW45MTFAZ21haWwuY29tIn0.WJubV_-6brsDhTWqxAonwrMSkjgcZqrnOJxYnqbsTbc
+Content-Type: application/json
 
+{
+    "onBoardingCompleted": true,
+    "department": "Mechanical",
+    "semester": "1st-sem"
+}

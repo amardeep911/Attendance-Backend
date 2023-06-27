@@ -1,5 +1,7 @@
 import express, { Request, Response } from "express";
 import { authRoute } from "./Routes/AuthRoutes";
+import { userRoute } from "./Routes/UserRoute";
+
 import dotenv from "dotenv";
 const User = require("./Model/User.model");
 const {verifyAccessToken} = require('./helper/jwt_helper');
@@ -18,6 +20,7 @@ app.use(cors());
 app.use(morgon("dev"));
 
 app.use("/auth", authRoute);
+app.use("/user",verifyAccessToken ,userRoute)
 
 interface CustomRequest extends Request {
   payload?: any; // Define the payload property

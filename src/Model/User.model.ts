@@ -27,7 +27,25 @@ const UserSchema = new mongoose.Schema({
         min: 6,
         max: 255,
     },
-    
+    department: {
+        type: String,
+        required: false,
+        min: 6,
+        max: 255,
+    },
+    semester: {
+        type: String,
+        required: false,
+        min: 6,
+        max: 255,
+    },
+    onBoardingCompleted: {
+        type: Boolean,
+        required: false,
+        default: false,
+    },
+
+
 });
 
 const User = mongoose.model("user", UserSchema);

@@ -26,4 +26,5 @@ const signUpController = async (req:Request, res:Response, next:any) => {
    }
 
 }
+
 export {signUpController};
