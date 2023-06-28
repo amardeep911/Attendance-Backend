@@ -44,7 +44,7 @@ const UserSchema = new mongoose.Schema({
         required: false,
         default: false,
     },
-
+    subjects:[{ type: mongoose.Schema.Types.ObjectId, ref: 'Subject' }]
 
 });
 

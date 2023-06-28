@@ -22,3 +22,16 @@ Content-Type: application/json
     "department": "Mechanical",
     "semester": "1st-sem"
 }
+
+### saveSubject
+POST http://127.0.0.1:8000/user/saveSubject
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDliM2MwMzliNGMwMGUzMTE5ODEwYWIiLCJpYXQiOjE2ODc5MjQ2ODksImV4cCI6MTY4Nzk1MzQ4OSwiYXVkIjoiNjQ5YjNjMDM5YjRjMDBlMzExOTgxMGFiIiwiaXNzIjoiYW1hcmRlZXByYW5qYW45MTFAZ21haWwuY29tIn0.1LFXR4wdhTqtcDzySR7dLtcnWXt-IFoFAUlNV-brsUY
+Content-Type: application/json
+
+{"days": ["Tuesday", "Monday", "Wednesday"], "professorName": "Nirmal Hui", "subjectCode": "MEC401", "subjectName": "Solid Mecahnics"}
+
+
+### FetchallSubject
+GET   http://127.0.0.1:8000/user/fetchSubjects
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDliM2MwMzliNGMwMGUzMTE5ODEwYWIiLCJpYXQiOjE2ODc5MjQ2ODksImV4cCI6MTY4Nzk1MzQ4OSwiYXVkIjoiNjQ5YjNjMDM5YjRjMDBlMzExOTgxMGFiIiwiaXNzIjoiYW1hcmRlZXByYW5qYW45MTFAZ21haWwuY29tIn0.1LFXR4wdhTqtcDzySR7dLtcnWXt-IFoFAUlNV-brsUY
+
