@@ -28,3 +28,5 @@ jobs:
     - run : |
         touch .env
         echo "${{secrets.ATTEN_ENV_FILE}}" > .env
+    - run: pm2 restart attendancebackend
+        
