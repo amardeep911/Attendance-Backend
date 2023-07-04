@@ -23,6 +23,18 @@ const SubjectSchema = new mongo.Schema({
         type:Array,
         required:true,
     },
+    Attendence: [
+        {
+          date: {
+            type: Date,
+            required: false,
+          },
+          isPresent: {
+            type: Boolean,
+            required: false,
+          },
+        },
+      ],
     
 });
 

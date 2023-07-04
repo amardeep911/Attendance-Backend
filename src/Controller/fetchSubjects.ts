@@ -16,7 +16,9 @@ const fetchSubject = async (req: CustomRequest, res: Response, next: any) => {
         return res.status(404).json({ error: "User not found" });
         }
    const subjetsArray = user.subjects;
+
     const subjects = await Subject.find({ _id: { $in: subjetsArray } });
+
     res.json({ subjects });
 
   } catch (err) {
