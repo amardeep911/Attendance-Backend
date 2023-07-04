@@ -31,6 +31,7 @@ const SubjectSchema = new mongo.Schema({
           },
           isPresent: {
             type: Boolean,
+            default: false,
             required: false,
           },
         },
